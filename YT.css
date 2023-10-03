@@ -1,0 +1,22 @@
+.video-preview {
+		display: inline-block;
+		width: 300px;
+		margin-right: 10px;
+}
+
+.video-snapshot {
+		width: 100%;
+}
+
+.video-thumbnail {
+		display: inline-block;
+}
+
+.video-content {
+		display: inline-block;
+}
+
+.whole-content {
+	width: 300px;
+	display: inline-block;
+}

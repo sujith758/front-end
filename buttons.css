@@ -1,0 +1,141 @@
+.request-button {
+				background-color: black;
+				color: white;
+				font-size: 11px;
+				height: 30px;
+				width: 100px;
+				cursor: pointer;
+				margin-bottom: 20px;
+				transition: background-color 0.5s, color 1s;
+			}
+.request-button:hover {
+				background-color: white;
+				color: black;
+				opacity: 0.9;
+				border-width: 1.5px;
+				font-weight: bold;
+			}
+			
+.request-button:active {
+				opacity: 0.5;
+			}
+			
+
+			
+.add-to-cart {
+				background-color: rgb(255,216,20);
+				color: black;
+				font-weight: bold;
+				border-radius: 30px;
+				border: none;
+				width: 200px;
+				height: 30px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: box-shadow 0.2s;
+				}
+				
+.add-to-cart:hover {
+				box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+				
+			}
+				
+			
+.sign-up {
+				background-color: rgb(46,164,79);
+				color: white;
+				font-size: 18px;
+				font-weight: bold;
+				border: none;
+				border-radius: 5px;
+				padding-top: 8px;
+				padding-bottom: 8px;
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-bottom: 20px;
+				transition: padding-left 1s,padding-right 1s, padding-top 1s, padding-bottom 1s;
+				}
+.sign-up:hover {
+				padding-left: 36px;
+				padding-right: 36px;
+				padding-top: 18px;
+				padding-bottom: 18px;
+				}
+				
+				
+				
+				
+.get-started {
+				background-color: rgb(121,82,179);
+				color: white;
+				font-weight: bold;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+				margin-bottom: 20px;
+				box-shadow: 3px 3px 5px rgba(0,0,0,0.5);
+				}
+			
+.get-started:active {
+				margin-top: 3px;
+				margin-left: 3px;
+				box-shadow: none;
+				}
+.download {
+				background-color: white;
+				height: 40px;
+				width: 120px;
+				border-radius: 5px;
+				border-width: 1px;
+				border-color: gray;
+				font: gray;
+				cursor: pointer;
+				margin-left: 20px;
+				}
+				
+				
+			
+.linkedin {
+				background-color: rgb(10,102,194);
+				color: white;
+				font-size: 15px;
+				font-weight: bold;
+				border: none;
+				border-radius: 30px;
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				margin-bottom: 20px;
+				cursor: pointer;
+				transition: padding 0.5s;
+				}
+				
+.linkedin:hover {
+				padding-left: 40px;
+				padding-right: 40px;
+				}
+
+.save {
+				background-color: white;
+				color: rgb(10,102,194);
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				border-radius: 30px;
+				border-width: 1.5px;
+				border-color: rgb(10,102,194);
+				cursor: pointer;
+				font-weight: bold;
+				margin-left: 20px;
+				transition: padding 0.5s;
+				}
+.save:hover {
+				padding-left: 40px;
+				padding-right: 40px;
+				}

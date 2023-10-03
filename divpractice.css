@@ -1,0 +1,100 @@
+p {
+	font-family: Tahoma;
+}
+
+.servicebox {
+		border-width: 2px;
+		box-shadow: 0 0 5px rgba(0,0,0,0.4);
+		background-color: white;
+		width: 300px;
+		height: 100px;
+		vertical-align: top;
+}
+
+.parag {
+		padding-top: 30px;
+		margin-top: 20px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+}
+
+.mood {
+		margin-left: 20px;
+}
+
+
+
+.sbox {
+	font-family: Arial;
+	background-color: black;
+	width: 330px;
+	height: 100px;
+}
+
+.h1 {
+	color: white;
+	font-size: 20px;
+	padding-left: 10px;
+	margin-bottom: 0;
+	padding-top: 15px;
+	
+		
+}
+
+.text {
+	color: gray;
+	font-size: 14px;
+	padding-left: 10px;
+	display: inline-block;
+	margin-top: 0;
+	
+}
+
+.googleimage {
+	display: block;
+	text-align: center;
+	margin-bottom: 0;
+}
+.imgs {
+	width: 200px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+.searchdiv {
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 0;
+}
+.buttondiv {
+	text-align: center;
+}
+
+
+
+.searchbox {
+	height: 35px;
+	width: 450px;
+	border: none;
+	border-radius: 30px;
+	box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+	padding-left: 10px;
+	font-size: 14px;
+
+}
+
+.googlebuttons1 {
+	text-align: center;
+	height: 38px;
+	width: 140px;
+	margin-right: 10px;
+	font-weight: bold;
+	border: none;
+}
+.googlebuttons2 {
+	text-align: center;
+	height: 38px;
+	width: 140px;
+	font-weight: bold;
+	border: none;
+}
