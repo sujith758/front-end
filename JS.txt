@@ -14,6 +14,7 @@ JS
 	# A normal stack. FIFO fashion work.
  -- heap memory
 	# Contents in the stack. whenever it is full, garbage collection is initiated.
+	-- Garbage Collection
  -- execution context
 	# Execution context is a container where the function's code is executed and its created whenever a fucntion is called.
 	  It contains three things > Variables, Functions and Lexical environment.
