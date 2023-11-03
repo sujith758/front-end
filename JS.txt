@@ -1,0 +1,270 @@
+JS
+
+- word vs keyword
+- var let const
+ -- the difference
+	# we can change the values in var and let at any point in the code and we cant change in const.
+	# var is global level variable assigner.
+	# let is local level varible assigner in fucntions. 
+ -- window object
+	# Window object is where everything in the code, may it be variables. Exist in JSON/Dict format.
+ -- browser context api
+	# It is an enviroment in which the document objects are presented to the user.
+ -- stack
+	# A normal stack. FIFO fashion work.
+ -- heap memory
+	# Contents in the stack. whenever it is full, garbage collection is initiated.
+ -- execution context
+	# Execution context is a container where the function's code is executed and its created whenever a fucntion is called.
+	  It contains three things > Variables, Functions and Lexical environment.
+ -- lexical environment
+	# Lexical enviroment is like a chart, where we get to see the scope of variables in fucntions, parent and child functions.
+
+- Hoisting 
+	# Order of the elements in the script.
+		(
+			var A
+			var B
+			A = 10
+			B = 20
+			This means the var a and var b are hoisted to the beginning of the script but it still works as we are assigning values to the variable.
+			And calling them somewhere in the bottom. 
+		)
+- types in js
+	# Primitives - number, string, null, undefined and boolean.
+		Null means there is no value in the assigned variable.
+		undefined means when the value is undefined or value is not assigned to the variable but variable is created.
+		Notdefined means when the variable is not defined.
+	# reference - [] {} () 
+ -- how to copy reference values
+	#use spread operator (...) to copy the values in array instead of copying the array itself.
+		Helps in maintaining the structure/data in the original array.
+		instead of giving var a = [1,2,3,4,5];
+						  var b = a;
+						  In this case when values of b is changed then values in a also changes.
+			So we copy the reference but not original array by using [...].
+		var a = [1,2,3,4,5];
+		var b = [...a]
+- conditionals
+	-- if else if-else
+ -- truthy vs falsy
+	# falsy values > 0, false, undefined, null, NaN, document.all
+ -- switch
+- loops
+	# for while
+ -- foreach forin forof do-while
+- functions
+ -- callback functions
+	- params and arguments
+- arrays 
+	# push pop shift unshift 
+ -- how arrays are made behind the scenes 
+ -- why we can make negative indexes arrays in js 
+- objects
+- props vs methods
+- updating object props 
+ -- how to delete object props
+- Maps
+ 
+ 
+DOM
+	- 4 pillars of DOM
+		-- Selecting an html element
+			# document.querySelector(".class/#id")
+				we can also make a variable for this.
+		-- Changing HTML 
+			# var a = document.querySelector(".class/#id")
+				a.innerHTML = "Thing we want to change"
+		-- Changing CSS
+				# a.style
+		-- Event Listener
+			# a.addEventListener("click", function(){
+				console.log("This will be seen in console after clicking the var a")
+			})
+	Simple example of bulb or clicking on the same button
+	Multiple events
+	Selecting multiple elements at same time
+		document.querySelectorAll
+	setTimeout
+	SetInterval
+	
+
+DOM: https://www.youtube.com/watch?v=WjxQRfZfZnw&t
+
+
+
+
+
+
+-- Higher order functions
+	# where we write functions in functions
+	# ForEach is a higher order function.
+-- Constructor functions
+	-- New keyword
+		Whenever we write a new keyword we are creating an object. 
+	-- This keyword
+	# Used to create multiple elements with same property then
+		constructor function is used.
+	Can be seen in window function. (Stored in browser)
+	function biscuit(){
+		this.width = 12;
+		this.height = 14;
+		this.color = "brown";
+		this.taste = "sugary"
+	}
+	var bis1 = new biscuit()
+	var bis2 = new biscuit()
+	var bis3 = new biscuit()
+		# Here every biscuit is a different instance.
+	ex: 
+		function circularButton(color){
+			this.radius = 2;
+			this.color = color;
+			this.icon = false;
+			this.pressable = true;
+		}
+
+		var greenbutton = new circularButton("green")
+		var redbutton = new circularButton("red")
+
+-- First class functions
+
+-- iife (Immmediately invoked function expression)
+	iife calls the function immediately.
+		With this we can make a private variable.
+	(function(){
+		var a = 10;
+	})
+	This variable can not be accessed and will not be seen in browser window.
+	Can be used to keep the secrets as variables in the code.
+	We can access the variable inside the iife function.
+
+	var ans = (function(){
+		var privateval = 23
+
+		return {
+			getter: function(){
+				console.log(privateval);
+			}
+		}
+	})
+
+	When we want to give access and print in console.
+
+		var ans = (function(){
+		var privateval = 23
+
+		return {
+			getter: function(){
+				console.log(privateval);
+			}
+
+			setter: function(val){
+				privateval = val;
+			}
+		}
+	})
+
+	We can change the privateval from the browser window.
+
+-- Prototype
+	 When an ojbect is created with some value 
+	 	var obj = {name: "Sujith"}
+	when called using 'obj.' other than the value itself, we get to see
+	the values other than what we created. Every object hs default values given
+	after creation. These are prototype properties.
+
+
+
+-- Prototypal Inheritance
+	Child inherits all the properties of the parent with the help of prototype.
+
+	var Human = {
+		name: "Harsh",
+		canFly: false,
+		canTalk: true,
+		willDie: true
+	}
+
+	var superHuman = {
+		laserEyes: true,
+		extraStrength: true
+	}
+
+	superHuman.__proto__ = Human
+		By this we superHuman can inherit all the properties from Human.
+
+
+
+When the function is inside the object, then it is called as method instead of function.
+
+	var obj = {
+		name: "Sujith"
+		randomFunction: function(){}
+	}
+
+-- This keyword	
+	value of this in global => window
+					function => window
+					method => object
+	In any method 'this' keyword always represent parent object.
+
+	ex:
+		var button = document.addEventListener("click", function(){
+			console.log(this);
+		})
+
+		Here this represent button.
+		 
+-- Call, Apply, Bind
+-- Pure and Impure functions
+-- Closures
+
+
+
+GSAP (GreenSock Animation Platform)
+	This is a Animation library.
+Prerequisite to use gsap in script.js.. we have to call the library using cdn link into body. (script tag)
+-- from and to
+	# gsap.from(".class/#id",{
+		x:700,
+		duration:2,
+		delay:2,
+		backgroundColor:"red",
+		rotate:360,
+		repeat:-1,
+		stagger:1
+	})
+
+	# gsap.to(".class/#id",{
+		x:700,
+		duration:2,
+		delay:2,
+		backgroundColor:"red",
+		rotate:360,
+		repeat:-1,
+		stagger:1
+	})
+
+-- Timeline
+	# Timeline is created because, it is hectic to create fucntion for every element. Instead we can create a timeline.
+
+	var timeLine = gsap.timeline()
+
+	timeLine.to("h1",{
+		x:600,
+		duration:1
+	});
+
+	timeLine.to("h2",{
+		x:600,
+		duration:1
+	});
+
+	timeLine.to("h3",{
+		x:600,
+		duration:1
+	});
+
+	It is now equal or else in case of individual element we have to give the duration differently.
+
