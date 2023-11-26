@@ -1,0 +1,15 @@
+.offers {
+  width: 85%;
+  height: 60vh;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 150px;
+  background: linear-gradient(200deg, #ffb6c1, white 65%);
+}
+
+.offers-right img {
+  width: 240px;
+}
