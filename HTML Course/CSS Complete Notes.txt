@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+    
+}
+
+img {
+    width: 100%;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    padding: 0.5vw 2vw;
+    height: 80px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.nav-container h2 {
+    font-family: Dancing Script;
+    font-weight: bold;
+    font-size: 3vw;
+
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.nav-container i {
+    display: none;
+}
+
+.content-container {
+    height: calc(100% - 80px);
+    width: 100%;
+    display: flex;
+}
+
+
+
+.left {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2vw;
+}
+
+.left-content h1 {
+    font-size: 5.5vw;
+    margin-bottom: 0.3vw;
+}
+
+.left-content p {
+    font-size: 2.5vw;
+    margin-bottom: 0;
+}
+
+.content-button {
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #FA82B2;
+    border: none;
+    color: white;
+    width: 20%;
+    cursor: pointer;
+}
+
+
+
+.right {
+    width: 45%;
+    height: 100%;
+}
+
+
+.right form {
+    box-shadow: 0 0 10px rgba(83,183,210,0.5);
+    margin-top: 6vw;
+    margin-right: 5vw;
+    padding-left: 7.5vw;
+    padding-bottom: 6vw;
+    background-image: url(https://img.freepik.com/free-photo/white-flower-with-cooking-ingredients-table_181624-1096.jpg?w=826&t=st=1697682446~exp=1697683046~hmac=069d577eb71f3019de352418cb93d113b2a2dcad4dfde8a30e9da16bbfa5804a);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;   
+     
+    
+}
+
+.form {
+    padding-top: 6vw;
+    padding-left: 4vw;
+}
+
+
+#username label {
+    font-size: 1.4vw;   
+    font-weight: bold; 
+}
+#username input {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 1vw;
+    width: 60%;
+}
+
+#password label {
+    font-size: 1.4vw;   
+    font-weight: bold; 
+}
+#password input {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 1vw;
+    width: 60%;
+}
+
+.signup {
+    display: inline-block;
+   
+}
+.signup button {
+    font-size: 1vw;
+    padding: 8px 10px;
+    background-color: #FA82B2;
+    border: none;
+    color: white;
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.login {
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.login button {
+    font-size: 1vw;
+    padding: 8px 10px;
+    background-color: #FA82B2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.products-container {
+    max-width: 100rem;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
+
+.products {
+    display: grid;
+    gap: 0.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.products-card {
+    margin: 0.5rem;
+    aspect-ratio: 1 / 1.4;
+}
+
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+.products-card {
+    display: grid;
+}
+
+.products-card > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.products-card-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: white;
+    align-self: end;
+    font-size: 0.8rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(54, 47, 47);
+    margin-top: 5rem;
+}
+
+.logo img {
+    width: 8rem;
+}
+
+.policies p {
+    font-size: 2rem;
+    color: white;
+}
+.policies ul {
+    color: white;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.socials p {
+    font-size: 2rem;
+    color: white;
+}
+
+.socials ul {
+    list-style-type: none;
+}
+
+
+
+.footer-logos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (width <= 900px) {
+
+    body {
+        height: 100%;
+    }
+    .nav-bar i {
+        display: block;
+        font-size: 2rem;
+    }
+    .nav-bar a {
+        display: none;
+        
+    }
+    .nav-container h2 {
+        font-size: 2.5rem;
+        padding-left: 1rem;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+    }
+
+
+
+    .left {
+        width: 100%;
+        height: 40%;
+        margin-top: 3rem;
+    }
+
+    .right {
+        width: 100%;
+        height: 60%;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
+
+    .left-content h1{
+        font-size: 3.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+
+    .left-content p{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+
+    .content-button {
+        font-size: 0.8rem;
+        padding: 1rem;
+        width: 30%;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .right {
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 60%;
+    }
+
+    .right form {
+        height: 100%;
+        margin-top: 2rem;
+        margin-left: 1.6rem;
+        width: 87.8%;
+    }
+
+    .form {
+        padding-top: 2rem;
+    }
+
+    #username label {
+        font-size: 1rem;
+    }
+
+    #username input {
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    #password label {
+        font-size: 1rem;
+    }
+
+    #password input {
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    .signup button {
+        font-size: 0.8rem;
+    }
+    
+    .login button {
+        font-size: 0.8rem;
+    }
+
+    .products-container {
+        margin-top: 5rem;
+    }
+    .footer {
+        height: 100px;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+    
+    .policies p {
+        font-size: 0.9rem;
+    }
+    
+    .policies ul {
+        font-size: 0.7rem;
+    }
+
+
+    .socials p {
+        font-size: 1rem;
+    }
+
+}
+
+
+

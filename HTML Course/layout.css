@@ -1,0 +1,71 @@
+.cat1 {
+	display: inline-block;
+	width: 130px;
+	margin-top: 15px;
+}
+.cat1img {
+	height: 110px;
+	width: 120px;
+	border-radius: 100px;
+}
+.cat2 {
+	display: inline-block;
+	width: 130px;
+	margin-top: 15px;
+}
+.cat2img {
+	height: 110px;
+	width: 120px;
+	border-radius: 100px;
+}
+.dog1 {
+	display: inline-block;
+	width: 130px;
+	margin-top: 15px;
+}
+.dog1img {
+	height: 110px;
+	width: 120px;
+	border-radius: 100px;
+}
+
+
+
+.cat1content {
+	display: inline-block;
+	vertical-align: top;
+	
+}
+.cat2content {
+	display: inline-block;
+	
+}
+.dog1content {
+	display: inline-block;
+}
+
+.name {
+	margin-top: 27px;
+}
+
+.button1 {
+	display: inline-block;
+	width: 50px;
+	vertical-align: top;
+}
+
+.button {
+	margin-top: 55px;
+	margin-bottom: 37px;
+	margin-left: 100px;
+	background-color: blue;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30px; 
+	padding-right: 30px;
+	border: none;
+	border-radius: 10px;
+	color: white;
+}
+
+

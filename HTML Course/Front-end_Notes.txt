@@ -1,0 +1,45 @@
+HTML
+CSS
+Bootstrap
+MUI
+JS
+React JS
+Redux
+Git
+Agile Methodology
+
+
+CSS - Bootstrap is important
+	  Materialize CSS
+	  Tailwind CSS
+
+
+VSCode is for react
+For now Notepad++ is enough
+
+Latest HTML version is 5
+HTML is a markup language
+	All it has is tags and attributes
+
+How to create HTML page?
+	save the file with .html extension.
+	
+	We have to declare the <DOCTYPE html>
+	We have to write <html><html>
+	We have to give title in head
+	we have to add all the css, js files in head ( we have to declare them in head only)
+	
+H1 to H6 are the heading tags.
+	Font size differs.
+
+1em=16px
+
+div is main container for a page
+to go to next page we use anchor tags and we use attributes to attach the page to the tag
+
+
+
+display: grid;
+grid-template-columns: 100px 100px 1fr;
+column-gap: 20px;
+row-gap: 20px;

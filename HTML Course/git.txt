@@ -1,0 +1,36 @@
+Git is a protocol.
+	Github/Bitbucket is a repository used for source code management.
+	
+	
+	Attlassian Stack
+		Bitbucket(SCM)
+		Jira(Ticketing)
+		Confluence(Documentation)
+		
+Key words:
+	local and Remote
+	Git vs Github
+	Git commands
+	Commit ID
+
+
+Dev  button feature Merge with Test branch
+Test Button feature
+UAT
+Master/Main - Prod
+
+
+		
+Git commands
+	git clone (to bring remote repo to local)
+	git init
+	git status
+	git add .
+	git commit -m commit message
+	git push
+	git merge test
+	git checkout UAT (change from one branch to another branch)
+	git diff
+	git fetch
+	git pull
+	

@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.list-elements {
+    display: inline-block;
+    color: white;
+    margin-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+
+.list-elements:hover {
+    background-color: black;
+
+}
+
+
+
+.info-bar {
+    background-color: gray;
+
+}

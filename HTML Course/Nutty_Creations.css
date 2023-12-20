@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+    
+}
+
+img {
+    width: 100%;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    background-color: white;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    height: 80px;
+}
+
+
+.header ul {
+    margin: 0;
+    padding: 0;
+    list-style:none;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.header ul a {
+    display: block;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+.header ul a:hover {
+    background-color: #ddd;
+}
+
+.header .logo {
+    display: inline-block;
+    font-family: Dancing Script;
+    font-size: 2.3rem;
+    padding: 0px 20px;
+    padding-top: 20px;
+    color: #FA82B2;
+    
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-icon {
+    padding: 40px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}   
+
+.header .menu-icon .nav-icon {
+    background: #333;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background: #333;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: 6px;
+}
+
+.header .menu-icon .nav-icon:after{
+    background: #333;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all 0.2s ease-out;
+    top: -6px;
+}
+
+
+.header .menu-button {
+    display: none;
+}
+
+.header .menu-button:checked ~ .menu {
+    max-height: 280px;
+}
+
+.header .menu-button:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+
+.header .menu-button:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-button:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}   
+
+
+.content-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+
+.left {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 2vw;
+    line-height: 1.7;
+}
+
+.left-content h1 {
+    font-size: 5.5vw;
+    margin-bottom: 0.3vw;
+}
+
+.left-content p {
+    font-size: 2.5vw;
+    margin-bottom: 0;
+}
+
+.content-button {
+    font-size: 1.2vw;
+    font-weight: bold;
+    padding: 10px 10px;
+    background-color: #FA82B2;
+    border: none;
+    color: white;
+    width: 20%;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+
+
+.right {
+    width: 45%;
+    height: 100%;
+}
+
+
+.right form {
+    box-shadow: 0 0 10px rgba(83,183,210,0.5);
+    margin-top: 6vw;
+    margin-right: 5vw;
+    padding-left: 7.5vw;
+    padding-bottom: 6vw;
+    background-image: url(https://img.freepik.com/free-photo/white-flower-with-cooking-ingredients-table_181624-1096.jpg?w=826&t=st=1697682446~exp=1697683046~hmac=069d577eb71f3019de352418cb93d113b2a2dcad4dfde8a30e9da16bbfa5804a);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;   
+     
+    
+}
+
+.form {
+    padding-top: 6vw;
+    padding-left: 4vw;
+}
+
+
+#username label {
+    font-size: 1.4vw;   
+    font-weight: bold; 
+}
+#username input {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 1vw;
+    width: 60%;
+}
+
+#password label {
+    font-size: 1.4vw;   
+    font-weight: bold; 
+}
+#password input {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 1vw;
+    width: 60%;
+}
+
+.signup {
+    display: inline-block;
+   
+}
+.signup button {
+    font-size: 1vw;
+    padding: 8px 10px;
+    background-color: #FA82B2;
+    border: none;
+    color: white;
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.login {
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+.login button {
+    font-size: 1vw;
+    padding: 8px 10px;
+    background-color: #FA82B2;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.products-container {
+    max-width: 100rem;
+    padding-inline: 2rem;
+    margin-inline: auto;
+}
+
+
+.products {
+    display: grid;
+    gap: 0.125rem;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.products-card {
+    margin: 0.5rem;
+    aspect-ratio: 1 / 1.4;
+}
+
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 1 / 1.25;
+    object-fit: cover;
+    object-position: right;
+}
+
+
+.products-card {
+    display: grid;
+}
+
+.products-card > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.products-card-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    text-align: justify;
+    text-justify: inter-word;
+    background-color: white;
+    align-self: end;
+    font-size: 0.8rem;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(54, 47, 47);
+    margin-top: 5rem;
+}
+
+.logo img {
+    width: 8rem;
+}
+
+.policies p {
+    font-size: 2rem;
+    color: white;
+}
+.policies ul {
+    color: white;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.socials p {
+    font-size: 2rem;
+    color: white;
+}
+
+.socials ul {
+    list-style-type: none;
+}
+
+
+
+.footer-logos {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hamburger {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    border: none;
+    appearance: none;
+    background: none;
+    outline: none;
+}
+
+
+
+@media (width <= 860px) {
+
+    body {
+        height: 100%;
+    }
+    .nav-container i {
+        display: block;
+        font-size: 2rem;
+    }
+    
+    .nav-container h2 {
+        font-size: 2.3rem;
+        padding-left: 1rem;
+    }
+
+    .nav-bar-list {
+        display: block;
+        flex-direction: column;
+        position: relative;
+        width: 100%;
+        height: 0;
+    }
+
+    
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        padding-top:  200px;
+        
+    }
+
+
+    .left {
+        width: 100%;
+        height: 40%;
+        margin-top: 3rem;
+    }
+
+    .right {
+        width: 100%;
+        height: 60%;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+
+    .left-content h1{
+        font-size: 3.2rem;
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+
+    .left-content p{
+        font-size: 1.5rem;
+        padding-left: 1rem;
+    }
+
+
+    .content-button {
+        font-size: 0.8rem;
+        padding: 1rem;
+        width: 30%;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .right {
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        height: 70%;
+    }
+
+    .right form {
+        height: 100%;
+        margin-top: 2rem;
+        margin-left: 1.6rem;
+        width: 87.8%;
+    }
+
+    .form {
+        padding-top: 2rem;
+    }
+
+    #username label {
+        font-size: 1rem;
+    }
+
+    #username input {
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    #password label {
+        font-size: 1rem;
+    }
+
+    #password input {
+        font-size: 0.7rem;
+        width: 70%;
+    }
+
+    .signup button {
+        font-size: 0.8rem;
+    }
+    
+    .login button {
+        font-size: 0.8rem;
+    }
+
+    .products-container {
+        margin-top: 5rem;
+    }
+    .footer {
+        height: 100px;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 3rem;
+    }
+    
+    .policies p {
+        font-size: 0.9rem;
+    }
+    
+    .policies ul {
+        font-size: 0.7rem;
+    }
+
+
+    .socials p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (width >= 860px) {
+
+    header li {
+        float: left;
+    }
+    
+    .header li a {
+        padding: 0px 30px;
+        padding-top: 30px;
+    }
+
+    .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+
+    .header .menu-icon {
+        display: none;
+    }
+
+
+}
+

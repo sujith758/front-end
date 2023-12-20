@@ -1,0 +1,255 @@
+Advanced topics for React(prereq)
+    1. ES5 vs ES6
+    2. Array, Objects and Functions
+    3. Arrow Functions/Normal Functions
+    4. Array Methods(map,filter,reduce,find,findIndex)
+    5. Destructuring(Code Modularization)
+    6. Rest Speed *
+    7. try catch(Error catching)
+    8. async await
+    9. Promises
+		(Promise has three attributes - resolve, reject and await).
+
+Starting with React
+
+State Management***
+	Hook (useState)
+	const [menu, setMenu] = useState("Dosa")
+
+
+0. Install Node.js
+1. Create folder (my-first-app)
+2. UseState hook and Real DOM and Virtual DOM
+3. Calling functions in React
+4. Two way binding
+5. Adding normal/module CSS in react and useRef (for validation, access the DOM properties)
+6. ToDo app
+7. Breaking the Components(importance of components)
+8. Props(normal data, children)
+9. Introduction to Class components (via lifecycle method) * Not importance
+10. UseEffect lifecycle hook
+11. Implementing ajax in react
+12. Gallery app using lorem api(react pagination)
+13. Routing
+14. Showing flash message (react toastify)
+15. context api(higher order components), higher order functions
+16. Cashbook app
+17. Redux toolkit
+18. TMDB (app)
+19. Deployment via Netlify
+
+
+Project Structure
+	1. Node modules/ has all the installed node packages
+	2. public/  Directory which contains statc files that dont change
+	3. src/ Directory: Main folder for the React code.
+		# Components/ REusable parts of UI, like buttons and headers
+		# assets/ images, fonts and other static files.
+		# styles/ CSS
+	4. package.json contains information about the project like name, version,
+		dependencies on other react packages.
+	5. vite.config.js contains vite config.
+File Extensions
+	.JS 
+		Stands for JavaScript
+		Contains regular javascript code
+		Used for general logic and components
+	.JSX
+		Stands for JavaScript XML
+		Combines JS with HTML-like tags
+		Makes it easier to design UI components.
+		
+Class vs Function components
+	Class Components - 
+		# stateful: can manage state
+		# Lifecycle: Access to lifecycle methods
+		# Verbose: More boilerplate code
+		# *Not preferred anymore*
+	Functional Components - 
+		# Intially stateless
+		# Can use hooks for state and effects.
+		# Simpler and more concise.
+		# More popular
+
+WHat is JSX file
+	JSX Determines how the UI will look whereever the components used.
+	Not HTML: THough it resembles HTML, we are actually writing JSX(JavaScript XML)
+	Conversion: JSX gets converted to regular JavaScript.
+	Babeljs.io/repl is a tool that allows you to see how JSX is transformed into JS.
+	
+Exporting Components
+	Default Exporting
+	Named Exporting
+	Importing
+	
+Create React Components Revision
+	File Extensions
+	Class vs Function Components
+	What is JSX
+	Exporting Components
+	DYnamic and REusable Components
+	
+	
+Fragments
+	Allows grouping of multiple elements without extra DOM nodes
+  Why?
+	Returns multiple elements without a wrapping parent
+	Cleaner DOM and Consistent Styling.
+  How? Two systaxes:
+	1. <React.Fragment>..</React.Fragment>
+	2. short: <>..</>
+	
+Map Methods
+	Purpose: Render lists from arrays.
+	JSX Elements: transform array into JSX
+	Inline Rendering: Directly inside JSX
+						{items.map(item => <li key={key.id}>{item.name}</li>}
+	key Prop: Assign unique key for optimized re-renders
+				<div key={item.id}>{item.name}</div>
+				
+				
+	example:
+		function App() {
+		
+		let foodItems = ['Dal','Bread','Milk','Salad']
+		
+		return (
+			<>
+			<h1>Healthy Foods</h1>
+			<ul class='list-group'>
+				{foodItems.map((item) => (
+					<li class='list-group-item'>{item}</li>
+				))}
+			</ul>
+			</>
+		);
+			
+		};
+		
+		
+		export default App;
+		
+Conditional Rendering
+	Displaying content based on certain conditions.
+	Allows dynamic user interfaces.
+	# Methods 
+		- If-else statments: Choose b/w two blocks of content
+		- Ternary operators: Quick way to choose between two options.
+		- Logical Operators: Useful for rendering content when a condition is true.
+		
+	# Benefits
+		- Enhances user experience.
+		- Reduces unnecessary rendering.
+		- Makes apps more interactive and responsive. 
+		
+Passing data with Props
+	Short for properties
+	Used for passing data
+	Read-only by default 
+	Used to pass data from parent to children
+	Makes components reusable
+	Defined as attributes in JSX
+	Data flows one-way only. Downwards
+	Props are immutable
+	Used for communication between components
+	Example: <Header title="My App" /> 
+	
+	
+Handling Events
+	React events use camelCase.
+	Uses synthetic events, not direct browser events.
+	Event handlers can be functions or arrow functions.
+	use onChange for controlled form inputs.
+	Avoid inline arrow functions in JSX for performance.
+
+
+Passing functions Via Props
+	Pass dynamic behaviors b/w components
+	Enables upward communication from parent to child.
+	Commomnly used for event handling.
+	Parent defines a function, child invokes it.
+	Enhances component interactivity.
+	Example:
+		<Button onClick={handleClick} />
+		
+State Management
+	State represents data that changes over time.
+	State is local and private to the component.
+	State changes cause the component to re-render.
+	For functional component, use the useState hook.
+	React Functions that start with word "use" are called hooks.
+	Hooks should only be used inside components.
+	Parent components can pass state down to children via props.
+	Lifting state up. share state between components by moving it to their closest common ancestor.
+
+state vs props
+	State:
+		Local and Mutable data within a component.
+		Initialized within the component.
+		Can change over time.
+		Causes re-render when updated.
+		Managed using useState in functional components.
+	Props:
+		Passed into a component from its parent.
+		Read-only(immutable) within the recieving component.
+		Allow parent-to-child component communication.
+		Changes in props can also cause a re-render.
+		
+React Icon Library
+	Install:
+	npm install react-icons -save
+	Use Icon:
+	import {IconName} from "react-icons/fc";
+
+useEffect
+Mounting when DOM Start
+Updating 
+Unmounting When DOM ends
+
+
+Where to get dummy API
+	JSON Placeholder.com
+
+
+const Navbar = () => {
+	const[data, setData] = useState([]);
+	
+	useEffect(() => {
+		fetch("<JSONplaceholder.com URL>")
+		.then((response) => response.json())
+		.then((json) => setData(json))
+	},[])
+	return (
+		<>
+		<div>
+			{data.length > 0 ?
+				<div>
+					{data.map((item,i) => {
+					
+						<div key={i}>
+						
+							<img src={item.thumbnail} alt="image"/>
+							<div>{item.name}</div>
+						
+						</div>
+					
+					
+					})}
+					
+				
+				</div>:<div>No Data Found</div>
+			}
+		
+		</div>
+		
+		
+		</>
+	)
+	
+}
+
+
+Class based components
+	render is mandatory as return in class based components.
+	
+	

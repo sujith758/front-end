@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+img { 
+    width: 100%;
+}
+
+
+#train {
+    
+    width: 100%;
+   
+    opacity: 0.4;
+}
+

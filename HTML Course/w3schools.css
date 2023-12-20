@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*NAVIGATION BAR START*/
+
+.nav-bar-div {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar-logo {
+    width: 69px;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.free-services-list {
+    list-style-type: none;
+    margin-left: -100px;
+}
+
+.free-services-content {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.search-bar-div {
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    margin-left: -110px;
+    width: 190px;
+    height: 36px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+    border-width: 1px;
+    padding-left: 10px;
+    font-style: italic;
+    
+
+}
+.search-button {
+    cursor: pointer;
+    width: 36px;
+    margin-left: -40px;
+    height: 20px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    
+}
+
+
+.paid-services-button {
+    width: 110px;
+    height: 36px;
+    border-radius: 40px;
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.paid-services-button:hover {
+    background-color: whitesmoke;
+}
+
+.signup, .login {
+    width: 110px;
+    height: 36px;
+    border-radius: 40px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+
+}
+
+.signup {
+    background-color: green;
+    color: white;
+    position: relative;
+    margin-right: -34px;
+    margin-left: -70px;
+    transition: background-color 0.2s;
+}
+
+.signup:hover {
+    background-color: rgb(58, 145, 58);
+}
+
+.login {
+    background-color: lightgreen;
+    margin-right: 15px;
+    padding-left: 20px;
+    transition: background-color 0.2s;
+}
+
+.login:hover {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+.course-bar-list {
+    list-style-type: none;
+    background-color: rgb(45, 42, 42);
+    color: white;
+    display: flex;
+   
+    
+}
+
+
+.course-bar-list-content {
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    overflow-x: hidden;
+}
+
+
+
+.course-bar-list-content:hover {
+    background-color: black;
+}
+
+
+/*NAVIGATION BAR END*/
+
+
+/*LEFT MENU BAR START*/
+
+.left-menu {
+    width: 250px;
+    height: 470px;
+    overflow-y: scroll;
+    position: fixed;
+    background-color: whitesmoke;
+}
+
+.vertical-list {
+    list-style-type: none;
+}
+
+.vertical-list-content {
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 15px;
+}
+
+.vertical-list-content:hover {
+    background-color: rgb(58, 145, 58);
+}
+
+/*LEFT MENU BAR END*/
+
+/*BODY START*/
+
+.body-wrapper {
+    position: fixed;
+    left: 250px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    width: 850px;
+}
+
+.piece-1 {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.piece-1-buttons {
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.p1-button-1 {
+    width: 110px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(58, 145, 58);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.p1-button-2 {
+    width: 85px;
+    height: 40px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(58, 145, 58);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.body-content-para {
+    position: fixed;
+    top: 260px;
+    left: 250px;
+    width: 850px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    width: 850px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+
+
+.body-content {
+    position: fixed;
+    top: 320px;
+    left: 250px;
+    width: 850px;
+    box-shadow: 0 0px 1px rgba(0,0,0,0.1);
+    width: 850px;
+}
+
+.body-content-div {
+    box-shadow: 0 0px 1px rgba(0,0,0,0.1);
+    width: 850px;
+}
+
+
+.body-content-title {
+    margin-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+}
+.body-content-list {
+    padding-left: 30px;
+    margin-left: 30px;
+}
+
+/*BODY END*/

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>
+		Rock Paper Scissors
+	</title>
+  </head>
+  <body>
+	<h2>
+		Rock Paper Scissors
+	</h2>
+		
+		
+	<button onclick="
+			const randomNumber = Math.random();
+			let computerMove = ' ';
+			if (randomNumber >= 0 && randomNumber < 1/3) {
+				computerMove = 'rock';
+			} else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+				computerMove = 'paper';
+			} else {
+				computerMove = 'scissors';
+			};
+			
+			let result = '';
+			if (computerMove === 'rock') {
+				result = 'Tie.';
+			} else if (computerMove === 'paper') {
+				result = 'you lose';
+			} else if (computerMove === 'scissors') {
+				result = 'you win';
+			}
+			
+			alert(`You picked rock.Computer Move: ${computerMove}. Result: ${result}`);
+	">Rock</button>
+	
+	<button onclick="
+			const randomNumber = Math.random();
+			let computerMove = ' ';
+			if (randomNumber >= 0 && randomNumber < 1/3) {
+				computerMove = 'rock';
+			} else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+				computerMove = 'paper';
+			} else {
+				computerMove = 'scissors';
+			};
+			
+			let result = '';
+			if (computerMove === 'paper') {
+				result = 'Tie.';
+			} else if (computerMove === 'rock') {
+				result = 'you win';
+			} else if (computerMove === 'scissors') {
+				result = 'you lose';
+			}
+			
+			alert(`You picked paper.Computer Move: ${computerMove}. Result: ${result}`);
+	
+	">Paper</button>
+	
+	<button onclick="
+			const randomNumber = Math.random();
+			let computerMove = ' ';
+			if (randomNumber >= 0 && randomNumber < 1/3) {
+				computerMove = 'rock';
+			} else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
+				computerMove = 'paper';
+			} else {
+				computerMove = 'scissors';
+			};
+			
+			let result = '';
+			if (computerMove === 'scissors') {
+				result = 'Tie.';
+			} else if (computerMove === 'paper') {
+				result = 'you win';
+			} else if (computerMove === 'rock') {
+				result = 'you lose';
+			}
+			
+			alert(`You picked scissors.Computer Move: ${computerMove}. Result: ${result}`);
+	
+	">Scissors</button>
+   
+    <script>
+		
+	
+	
+    </script>
+  </body>
+</html>

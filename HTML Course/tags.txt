@@ -1,0 +1,39 @@
+Tags
+	html
+	head
+	body
+	div
+	p
+	br
+	hr
+	h1 to h6
+	a
+	button
+	link
+	img
+	input
+	ul(unordered list)
+	ol(ordered list)
+	dl(description list)
+	iframe
+Attributes
+	a=anchor tag
+	target= to land in target page
+
+inline css - write style in form of atrribute
+internal - we write css in style section of the body
+external - we add css file with link tag in head
+
+
+
+number
+email
+checkbox
+button
+
+video tag attributes
+	autoplay muted controls
+	type="video/mp4"
+		mp4 webm ogg are suported formats
+		mp3 wam ogg are audio supported formats
+
