@@ -6,6 +6,88 @@ INSTALL REACT IN WINDOWS (IMP)********
 
 JS
 
+Data Types(Primitive and Non-primitive)
+	THere are 7 data types
+		Primitive - String, Number, Boolean, Undefined and Null
+		Non-primitive - Object, Array and Regex
+		
+Array Methods:
+	Array length
+	Array toString()
+	Array at() - will return element in the specified index. at(1)
+	Array join() - joins an array join("*") we can use anything to join.
+	Array pop() - deletes last element in the array.
+	Array push() - adds an element into array in last index. push("something")
+	Array shift() - deletes element in the 0th element of array.
+	Array unshift() - adds an element in the 0th index of array. unshift("something")
+	Array delete() - deletes an element. we need to give index. 
+	Array concat() - concats two arrays and form a new array.
+	Array copyWithin() - copies array elements to another position in an array. const fruits = ["Banana", "Orange", "Apple", "Mango"]; fruits.copyWithin(2, 0);
+	Array flat() - creates an new array as old array has nested arrays. 
+	Array splice() - const fruits = ["Banana", "Orange", "Apple", "Mango"]; fruits.splice(2, 0, "Lemon", "Kiwi"); here 2 is index where new elements are added. and 0 is how many elements are removed.
+	Array splice() - also used to delete elements in array.const fruits = ["Banana", "Orange", "Apple", "Mango"]; fruits.splice(0, 1);
+	Array toSpliced() - This also deletes and doesnot create new array. const months = ["Jan", "Feb", "Mar", "Apr"]; const spliced = months.toSpliced(0, 1);
+	Array slice() - const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"]; const citrus = fruits.slice(1); also minus indexes works here.
+	See Also:
+	Search Methods
+		Array indexOf() - gives element in the index mentioned from left to right.
+		Array lastIndexOf() - gives element in the index mentioned sees from right to left.
+		Array includes() - gives boolean value true or false if an element exists in array or not.
+		Array find() - checks and returns value if we have it in array or not.
+		Array findIndex() - gives index.
+		Array findLast()
+		Array findLastIndex()
+	Sort Methods
+		Alpabetic Sort
+			Array sort() - Sorts alphabetically in decending order and gives new array.
+			Array reverse() - same as sort()
+			Array toSorted() - same as sort() but keeps the old array unchanged. 
+			Array toReversed() - same as reverse() but it wont change the old array.
+		Numeric Sort
+			Numeric Sort
+			Random Sort
+			Math.min()
+			Math.max()
+			Home made Min()
+			Home made Max()
+	Iteration Methods	
+		Array forEach
+		Array map() - iterates through every element in array, json. gives boolean if any callback function is added.
+		Array flatMap() - flats and iterates nested arrays.
+		Array filter() - same as map but gives array of elements as output
+		Array reduce() - reduces entire array to single value, needs any mathematical operation.(left to right)
+		Array reduceRight() - same as reduce. But in reverse direction.
+		Array every() - to validate conditions on elements in array. gives boolean.
+		Array some() - also validates but says atleast one element satisfies the condition.
+		Array from() - makes an string,object to iterable array
+		Array keys() - just return the indexes of elements. make a for loop and print keys. use for loop as the method creates array object iterator(Object [Array Iterator] {})
+		Array entries() - same as keys. gives index and element as key value pairs. 
+		Array with() - replace any object picked by index. array.with(1,"Grapes").
+		Array Spread (...) - Refer line 104
+
+--Switch 
+	It is a kind of if-elif and else statement but more strict and with less flexibility.
+	If else checks a single condition and execute different blocks of code based on whether the condition is true or false.
+	Switch allows you to compare a single value against multiple cases and execute different blocks of code based on the value matching one of the cases.
+	We should include break statement in order to break the switch if a case is true. or it will go through end of switch statement.(costly operation).
+
+-- try-catch vs then-catch
+	try-catch is used in synchnorous calls.
+	then-catch is used in promise calls(async operations). 
+--window loction
+		window.location.href returns the href (URL) of the current page
+		window.location.hostname returns the domain name of the web host
+		window.location.pathname returns the path and filename of the current page
+		window.location.protocol returns the web protocol used (http: or https:)
+		window.location.assign() loads a new document
+
+--Deep Freeze vs Deep Copy
+	Deep freeze is just like freezing the object, after freezing we cant change the object or any of iys properties.
+	Deep Copy allows us to make a copy of object/nested object to full extent and forms a new object.
+
+--Ternary operator
+	let result = (age >= 18) ? "Adult" : "Minor";
+
 - word vs keyword
 - var let const
  -- the difference
@@ -355,12 +437,12 @@ ASYNC WAIT
 	# promises
 	# setTimeout
 	# SetInterval
-		Now we call them to main stack from side stack by using the folowing.
+		Now we call them to main stack from side stack by using the following.
 	# callbacks
 	# then catch
 	# async wait
 
--- single threading and muli threading
+-- single threading and multi threading
 	There will be main stack and side stack(with async funcitons)
 	All functions in main stack are sync functions and runs first.
 	All funcitons in the side stack are async functions and are run when all sync funcs in main stack are over.
@@ -438,276 +520,3 @@ AWAIT MEANS whenever the data comes then only it is resolved or else it will be 
 
 
 	
-=======
-JS
-
-- word vs keyword
-- var let const
- -- the difference
-	# we can change the values in var and let at any point in the code and we cant change in const.
-	# var is global level variable assigner.
-	# let is local level varible assigner in fucntions. 
- -- window object
-	# Window object is where everything in the code, may it be variables. Exist in JSON/Dict format.
- -- browser context api
-	# It is an enviroment in which the document objects are presented to the user.
- -- stack
-	# A normal stack. FIFO fashion work.
- -- heap memory
-	# Contents in the stack. whenever it is full, garbage collection is initiated.
-	-- Garbage Collection
- -- execution context
-	# Execution context is a container where the function's code is executed and its created whenever a fucntion is called.
-	  It contains three things > Variables, Functions and Lexical environment.
- -- lexical environment
-	# Lexical enviroment is like a chart, where we get to see the scope of variables in fucntions, parent and child functions.
-
-- Hoisting 
-	# Order of the elements in the script.
-		(
-			var A
-			var B
-			A = 10
-			B = 20
-			This means the var a and var b are hoisted to the beginning of the script but it still works as we are assigning values to the variable.
-			And calling them somewhere in the bottom. 
-		)
-- types in js
-	# Primitives - number, string, null, undefined and boolean.
-		Null means there is no value in the assigned variable.
-		undefined means when the value is undefined or value is not assigned to the variable but variable is created.
-		Notdefined means when the variable is not defined.
-	# reference - [] {} () 
- -- how to copy reference values
-	#use spread operator (...) to copy the values in array instead of copying the array itself.
-		Helps in maintaining the structure/data in the original array.
-		instead of giving var a = [1,2,3,4,5];
-						  var b = a;
-						  In this case when values of b is changed then values in a also changes.
-			So we copy the reference but not original array by using [...].
-		var a = [1,2,3,4,5];
-		var b = [...a]
-- conditionals
-	-- if else if-else
- -- truthy vs falsy
-	# falsy values > 0, false, undefined, null, NaN, document.all
- -- switch
-- loops
-	# for while
- -- foreach forin forof do-while
-- functions
- -- callback functions
-	- params and arguments
-- arrays 
-	# push pop shift unshift 
- -- how arrays are made behind the scenes 
- -- why we can make negative indexes arrays in js 
-- objects
-- props vs methods
-- updating object props 
- -- how to delete object props
-- Maps
- 
- 
-DOM
-	- 4 pillars of DOM
-		-- Selecting an html element
-			# document.querySelector(".class/#id")
-				we can also make a variable for this.
-		-- Changing HTML 
-			# var a = document.querySelector(".class/#id")
-				a.innerHTML = "Thing we want to change"
-		-- Changing CSS
-				# a.style
-		-- Event Listener
-			# a.addEventListener("click", function(){
-				console.log("This will be seen in console after clicking the var a")
-			})
-	Simple example of bulb or clicking on the same button
-	Multiple events
-	Selecting multiple elements at same time
-		document.querySelectorAll
-	setTimeout
-	SetInterval
-	
-
-DOM: https://www.youtube.com/watch?v=WjxQRfZfZnw&t
-
-
-
-
-
-
--- Higher order functions
-	# where we write functions in functions
-	# ForEach is a higher order function.
--- Constructor functions
-	-- New keyword
-		Whenever we write a new keyword we are creating an object. 
-	-- This keyword
-	# Used to create multiple elements with same property then
-		constructor function is used.
-	Can be seen in window function. (Stored in browser)
-	function biscuit(){
-		this.width = 12;
-		this.height = 14;
-		this.color = "brown";
-		this.taste = "sugary"
-	}
-	var bis1 = new biscuit()
-	var bis2 = new biscuit()
-	var bis3 = new biscuit()
-		# Here every biscuit is a different instance.
-	ex: 
-		function circularButton(color){
-			this.radius = 2;
-			this.color = color;
-			this.icon = false;
-			this.pressable = true;
-		}
-
-		var greenbutton = new circularButton("green")
-		var redbutton = new circularButton("red")
-
--- First class functions
-
--- iife (Immmediately invoked function expression)
-	iife calls the function immediately.
-		With this we can make a private variable.
-	(function(){
-		var a = 10;
-	})
-	This variable can not be accessed and will not be seen in browser window.
-	Can be used to keep the secrets as variables in the code.
-	We can access the variable inside the iife function.
-
-	var ans = (function(){
-		var privateval = 23
-
-		return {
-			getter: function(){
-				console.log(privateval);
-			}
-		}
-	})
-
-	When we want to give access and print in console.
-
-		var ans = (function(){
-		var privateval = 23
-
-		return {
-			getter: function(){
-				console.log(privateval);
-			}
-
-			setter: function(val){
-				privateval = val;
-			}
-		}
-	})
-
-	We can change the privateval from the browser window.
-
--- Prototype
-	 When an ojbect is created with some value 
-	 	var obj = {name: "Sujith"}
-	when called using 'obj.' other than the value itself, we get to see
-	the values other than what we created. Every object hs default values given
-	after creation. These are prototype properties.
-
-
-
--- Prototypal Inheritance
-	Child inherits all the properties of the parent with the help of prototype.
-
-	var Human = {
-		name: "Harsh",
-		canFly: false,
-		canTalk: true,
-		willDie: true
-	}
-
-	var superHuman = {
-		laserEyes: true,
-		extraStrength: true
-	}
-
-	superHuman.__proto__ = Human
-		By this we superHuman can inherit all the properties from Human.
-
-
-
-When the function is inside the object, then it is called as method instead of function.
-
-	var obj = {
-		name: "Sujith"
-		randomFunction: function(){}
-	}
-
--- This keyword	
-	value of this in global => window
-					function => window
-					method => object
-	In any method 'this' keyword always represent parent object.
-
-	ex:
-		var button = document.addEventListener("click", function(){
-			console.log(this);
-		})
-
-		Here this represent button.
-		 
--- Call, Apply, Bind
--- Pure and Impure functions
--- Closures
-
-
-
-GSAP (GreenSock Animation Platform)
-	This is a Animation library.
-Prerequisite to use gsap in script.js.. we have to call the library using cdn link into body. (script tag)
--- from and to
-	# gsap.from(".class/#id",{
-		x:700,
-		duration:2,
-		delay:2,
-		backgroundColor:"red",
-		rotate:360,
-		repeat:-1,
-		stagger:1
-	})
-
-	# gsap.to(".class/#id",{
-		x:700,
-		duration:2,
-		delay:2,
-		backgroundColor:"red",
-		rotate:360,
-		repeat:-1,
-		stagger:1
-	})
-
--- Timeline
-	# Timeline is created because, it is hectic to create fucntion for every element. Instead we can create a timeline.
-
-	var timeLine = gsap.timeline()
-
-	timeLine.to("h1",{
-		x:600,
-		duration:1
-	});
-
-	timeLine.to("h2",{
-		x:600,
-		duration:1
-	});
-
-	timeLine.to("h3",{
-		x:600,
-		duration:1
-	});
-
-	It is now equal or else in case of individual element we have to give the duration differently.
-
->>>>>>> f8e27a0b807f8bf0bf2f3a4c48b705a95dd67292

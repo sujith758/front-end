@@ -101,6 +101,7 @@ body {
     height: 550px;
     width: 100%;
     position: absolute;
+    z-index: -20;
 }
 
 .body-img {
@@ -117,6 +118,7 @@ body {
     left: 300px;
     display: inline-block;
     width: 700px;
+    z-index: 30;
 }
 
 .overlay-content {
